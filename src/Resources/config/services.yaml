@@ -1,0 +1,16 @@
+services:
+
+  FluxSE\SyliusHCaptchaPlugin\Form\Extension\AbstractHCaptchaFormExtension:
+    abstract: true
+
+  FluxSE\SyliusHCaptchaPlugin\Form\Extension\ContactFormExtension:
+    parent: FluxSE\SyliusHCaptchaPlugin\Form\Extension\AbstractHCaptchaFormExtension
+    tags:
+      - { name: form.type_extension }
+
+  FluxSE\SyliusHCaptchaPlugin\Form\Extension\CustomerRegistrationFormExtension:
+    parent: FluxSE\SyliusHCaptchaPlugin\Form\Extension\AbstractHCaptchaFormExtension
+    arguments:
+      $validationGroups: '%sylius.form.type.customer_registration.validation_groups%'
+    tags:
+      - { name: form.type_extension }

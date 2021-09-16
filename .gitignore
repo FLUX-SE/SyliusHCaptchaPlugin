@@ -1,0 +1,11 @@
+/vendor/
+/node_modules/
+/composer.lock
+
+/etc/build/*
+!/etc/build/.gitignore
+
+/tests/Application/yarn.lock
+/tests/Application/composer.lock
+
+/.phpunit.result.cache

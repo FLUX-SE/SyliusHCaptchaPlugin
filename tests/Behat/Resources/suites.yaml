@@ -1,0 +1,35 @@
+# Put your Behat suites definitions here
+
+default:
+    suites:
+        ui_requesting_contact_with_captcha:
+            contexts:
+                - sylius.behat.context.hook.doctrine_orm
+
+                - sylius.behat.context.transform.shared_storage
+
+                - sylius.behat.context.setup.channel
+
+                - sylius.behat.context.ui.email
+                - sylius.behat.context.ui.shop.contact
+                - flux-se.sylius.hcaptcha.behat.context.ui.shop.contact
+
+            filters:
+                tags: "@requesting_contact_with_captcha && @ui"
+
+        ui_customer_registration_with_captcha:
+            contexts:
+                - sylius.behat.context.hook.doctrine_orm
+
+                - sylius.behat.context.transform.shared_storage
+
+                - sylius.behat.context.setup.channel
+                - sylius.behat.context.setup.shop_security
+                - sylius.behat.context.setup.user
+
+                - sylius.behat.context.ui.email
+                - sylius.behat.context.ui.shop.registration
+                - flux-se.sylius.hcaptcha.behat.context.ui.shop.registration
+
+            filters:
+                tags: "@customer_registration_with_captcha && @ui"

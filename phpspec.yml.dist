@@ -1,0 +1,4 @@
+suites:
+    main:
+        namespace: FluxSE\SyliusHCaptchaPlugin
+        psr4_prefix: FluxSE\SyliusHCaptchaPlugin

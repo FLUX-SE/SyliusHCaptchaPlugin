@@ -1,0 +1,13 @@
+services:
+
+  flux-se.sylius.hcaptcha.behat.context.ui.shop.registration:
+    public: true
+    class: Tests\FluxSE\SyliusHCaptchaPlugin\Behat\Context\Ui\Shop\CaptchaContext
+    arguments:
+      $page: '@sylius.behat.page.shop.account.register'
+
+  flux-se.sylius.hcaptcha.behat.context.ui.shop.contact:
+    public: true
+    class: Tests\FluxSE\SyliusHCaptchaPlugin\Behat\Context\Ui\Shop\CaptchaContext
+    arguments:
+      $page: '@sylius.behat.page.shop.contact'

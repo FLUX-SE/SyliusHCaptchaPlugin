@@ -1,0 +1,5 @@
+fluxse:
+  sylius_hcaptcha_plugin:
+    form:
+      captcha:
+        label: 'Captcha'

@@ -1,0 +1,6 @@
+fluxse:
+  sylius_hcaptcha_plugin:
+    form:
+      captcha:
+        is_valid_captcha: 'Le CAPTCHA est invalide.'
+        not_empty: 'Le CAPTCHA est requis.'
