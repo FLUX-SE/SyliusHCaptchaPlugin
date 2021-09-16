@@ -61,12 +61,12 @@ HCAPTCHA_SECRET=0x0000000000000000000000000000000000000000
 ###< meteo-concept/hcaptcha-bundle ###
 ```
 
-[ico-version]: https://img.shields.io/packagist/v/FluxSE/sylius-hcaptcha-plugin.svg?style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/FLUX-SE/sylius-hcaptcha-plugin.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-github-actions]: https://github.com/FluxSE/SyliusHCaptchaPlugin/workflows/Build/badge.svg
-[ico-code-quality]: https://img.shields.io/scrutinizer/g/FluxSE/SyliusHCaptchaPlugin.svg?style=flat-square
+[ico-github-actions]: https://github.com/FLUX-SE/SyliusHCaptchaPlugin/workflows/Build/badge.svg
+[ico-code-quality]: https://img.shields.io/scrutinizer/g/FLUX-SE/SyliusHCaptchaPlugin.svg?style=flat-square
 
 [link-packagist]: https://packagist.org/packages/flux-se/sylius-hcaptcha-plugin
-[link-github-actions]: https://github.com/FluxSE/SyliusHCaptchaPlugin/actions?query=workflow%3A"Build"
-[link-scrutinizer]: https://scrutinizer-ci.com/g/FluxSE/SyliusHCaptchaPlugin/code-structure
-[link-code-quality]: https://scrutinizer-ci.com/g/FluxSE/SyliusHCaptchaPlugin
+[link-github-actions]: https://github.com/FLUX-SE/SyliusHCaptchaPlugin/actions?query=workflow%3A"Build"
+[link-scrutinizer]: https://scrutinizer-ci.com/g/FLUX-SE/SyliusHCaptchaPlugin/code-structure
+[link-code-quality]: https://scrutinizer-ci.com/g/FLUX-SE/SyliusHCaptchaPlugin
