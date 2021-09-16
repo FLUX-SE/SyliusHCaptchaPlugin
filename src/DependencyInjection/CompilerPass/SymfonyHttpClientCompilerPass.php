@@ -17,14 +17,25 @@ final class SymfonyHttpClientCompilerPass implements CompilerPassInterface
 {
     public function process(ContainerBuilder $container): void
     {
-        if (false === $container->has('psr18.http_client')) {
-            return;
+        if (false === $container->has(ClientInterface::class)) {
+            $container->setDefinition(
+                ClientInterface::class,
+                new Definition(Psr18Client::class)
+            );
         }
 
-        $container->addDefinitions([
-            ClientInterface::class => new Definition(Psr18Client::class),
-            RequestFactoryInterface::class => new Definition(Psr17Factory::class),
-            StreamFactoryInterface::class => new Definition(Psr17Factory::class),
-        ]);
+        if (false === $container->has(RequestFactoryInterface::class)) {
+            $container->setDefinition(
+                RequestFactoryInterface::class,
+                new Definition(Psr17Factory::class)
+            );
+        }
+
+        if (false === $container->has(StreamFactoryInterface::class)) {
+            $container->setDefinition(
+                StreamFactoryInterface::class,
+                new Definition(Psr17Factory::class)
+            );
+        }
     }
 }
