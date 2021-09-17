@@ -40,14 +40,10 @@ Add or modify the `meteo-concept/hcaptcha-bundle` configuration :
 ```yaml
 # config/packages/meteo_concept_hcaptcha.yaml
 
-parameters:
-  hcaptcha_site_key: '%env(resolve:HCAPTCHA_SITE_KEY)%'
-  hcaptcha_secret: '%env(resolve:HCAPTCHA_SECRET)%'
-
 meteo_concept_h_captcha:
   hcaptcha:
-    site_key: '%hcaptcha_site_key%'
-    secret: '%hcaptcha_secret%'
+    site_key: '%env(resolve:HCAPTCHA_SITE_KEY)%'
+    secret: '%env(resolve:HCAPTCHA_SECRET)%'
   validation: 'strict'
 
 ```
