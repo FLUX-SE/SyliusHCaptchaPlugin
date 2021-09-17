@@ -57,7 +57,7 @@ HCAPTCHA_SECRET=0x0000000000000000000000000000000000000000
 ###< meteo-concept/hcaptcha-bundle ###
 ```
 
-[ico-version]: https://img.shields.io/packagist/v/FLUX-SE/sylius-hcaptcha-plugin.svg?style=flat-square
+[ico-version]: http://poser.pugx.org/flux-se/sylius-hcaptcha-plugin/v
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
 [ico-github-actions]: https://github.com/FLUX-SE/SyliusHCaptchaPlugin/workflows/Build/badge.svg
 [ico-code-quality]: https://img.shields.io/scrutinizer/g/FLUX-SE/SyliusHCaptchaPlugin.svg?style=flat-square
