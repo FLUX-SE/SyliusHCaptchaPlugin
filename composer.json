@@ -40,8 +40,7 @@
         "symfony/intl": "^4.4 || ^5.2",
         "symfony/web-profiler-bundle": "^4.4 || ^5.2",
         "matthiasnoback/symfony-config-test": "^4.1",
-        "vimeo/psalm": "^4.6.4",
-        "friendsofsymfony/oauth-server-bundle": "^1.6 || >2.0.0-alpha.0 ^2.0@dev"
+        "vimeo/psalm": "^4.6.4"
     },
     "suggest": {
         "symfony/http-client": "A Symfony component that implements PSR-18 HTTP client interface",
@@ -54,18 +53,6 @@
         "psr-4": { "Tests\\FluxSE\\SyliusHCaptchaPlugin\\": "tests/" }
     },
     "scripts": {
-        "analyse": [
-            "@composer validate --strict",
-            "vendor/bin/phpstan.phar analyse -l max src/",
-            "vendor/bin/psalm"
-        ],
-        "analyse-with-ecs": [
-            "vendor/bin/ecs check src",
-            "@analyse"
-        ],
-        "fix": [
-            "vendor/bin/ecs check src --fix"
-        ],
         "post-install-cmd": [
             "php bin/create_node_symlink.php"
         ],
