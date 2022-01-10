@@ -170,8 +170,14 @@ jobs:
         run: symfony server:ca:install
 
       -
+        name: Use latest chrome
+        uses: browser-actions/setup-chrome@latest
+
+      - run: chrome --version
+
+      -
         name: Run Chrome Headless
-        run: google-chrome-stable --enable-automation --disable-background-networking --no-default-browser-check --no-first-run --disable-popup-blocking --disable-default-apps --allow-insecure-localhost --disable-translate --disable-extensions --no-sandbox --enable-features=Metal --headless --remote-debugging-port=9222 --window-size=2880,1800 --proxy-server='direct://' --proxy-bypass-list='*' https://127.0.0.1 --crash-dumps-dir=/tmp/chrome > /dev/null 2>&1 &
+        run: chrome --enable-automation --disable-background-networking --no-default-browser-check --no-first-run --disable-popup-blocking --disable-default-apps --allow-insecure-localhost --disable-translate --disable-gpu --disable-extensions --no-sandbox --enable-features=Metal --headless --remote-debugging-port=9222 --window-size=2880,1800 --proxy-server='direct://' --proxy-bypass-list='*' https://127.0.0.1 > /dev/null 2>&1 &
 
       -
         name: Run webserver
@@ -271,12 +277,10 @@ jobs:
         run: vendor/bin/behat --colors --strict -vvv --no-interaction || vendor/bin/behat --colors --strict -vvv --no-interaction --rerun
 
       -
-        name: Upload logs
+        name: Upload Behat logs
         uses: actions/upload-artifact@v2
         if: failure()
         with:
           name: Behat logs
-          path: |
-            etc/build/
-            /tmp/chrome
+          path: etc/build/
           if-no-files-found: ignore
