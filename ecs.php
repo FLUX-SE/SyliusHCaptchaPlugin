@@ -2,8 +2,17 @@
 
 declare(strict_types=1);
 
-use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
+use PhpCsFixer\Fixer\ControlStructure\TrailingCommaInMultilineFixer;
+use Symplify\EasyCodingStandard\Config\ECSConfig;
 
-return static function (ContainerConfigurator $containerConfigurator): void {
-    $containerConfigurator->import(__DIR__.'/vendor/symplify/easy-coding-standard/config/set/symfony.php');
+return static function (ECSConfig $ecsConfig): void {
+    $ecsConfig->import(__DIR__ . '/vendor/sylius-labs/coding-standard/ecs.php');
+
+    $services = $ecsConfig->services();
+
+    // PHP 7 compatibility
+    $services
+        ->set(TrailingCommaInMultilineFixer::class)
+        ->call('configure', [['elements' => ['arrays']]])
+    ;
 };
