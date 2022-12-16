@@ -194,7 +194,7 @@ jobs:
 
             -
                 name: Run Chrome Headless
-                run: google-chrome-stable --enable-automation --disable-background-networking --no-default-browser-check --no-first-run --disable-popup-blocking --disable-default-apps --allow-insecure-localhost --disable-features=Translate --disable-extensions --no-sandbox --enable-features=Metal --headless --remote-debugging-port=9222 --window-size=2880,1800 https://127.0.0.1 > /dev/null 2>&1 &
+                run: google-chrome-stable --ignore-certificate-errors --enable-automation --disable-background-networking --no-default-browser-check --no-first-run --disable-popup-blocking --disable-default-apps --allow-insecure-localhost --disable-features=Translate --disable-extensions --no-sandbox --enable-features=Metal --headless --remote-debugging-port=9222 --window-size=2880,1800 https://127.0.0.1 &
 
             -
                 name: Get Composer cache directory
