@@ -12,3 +12,4 @@
 /phpstan.neon.dist
 /phpspec.yml
 /behat.yml
+/drivers/
