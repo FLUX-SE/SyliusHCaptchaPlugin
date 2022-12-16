@@ -22,9 +22,9 @@ default:
                 panther:
                     panther:
                         options:
-                            browser: 'chrome'
-                            webServerDir: '%paths.base%/public'
-                            external_base_uri: https://127.0.0.1:8080/'
+                            browser: "chrome"
+                            webServerDir: "%paths.base%/public"
+                            external_base_uri: "https://127.0.0.1:8080/"
                         kernel_options:
                             APP_ENV: test_cached
                             APP_DEBUG: false
