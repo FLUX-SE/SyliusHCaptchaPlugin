@@ -229,7 +229,7 @@ jobs:
 
             -
                 name: Install Behat driver
-                run: vendor/bin/bdi detect drivers
+                run: vendor/bin/bdi browser:google-chrome drivers
 
             -
                 name: Get Yarn cache directory
