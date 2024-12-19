@@ -31,7 +31,7 @@
         "phpstan/phpstan-doctrine": "^1",
         "phpstan/phpstan-strict-rules": "^1",
         "phpstan/phpstan-webmozart-assert": "^1",
-        "phpunit/phpunit": "^9.5",
+        "phpunit/phpunit": "^10",
         "polishsymfonycommunity/symfony-mocker-container": "^1.0",
         "robertfausk/behat-panther-extension": "^1.1",
         "sylius-labs/coding-standard": "^4.0",
@@ -42,8 +42,7 @@
         "symfony/intl": "^6.4 || ^7.1",
         "symfony/runtime": "^6.4 || ^7.1",
         "symfony/web-profiler-bundle": "^6.4 || ^7.1",
-        "symfony/webpack-encore-bundle": "^1.16",
-        "vimeo/psalm": "^4|^5",
+        "symfony/webpack-encore-bundle": "^2.2",
         "dbrekelmans/bdi": "^1.0"
     },
     "suggest": {
