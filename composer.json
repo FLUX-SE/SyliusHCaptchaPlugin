@@ -12,7 +12,7 @@
     ],
     "require": {
         "sylius/sylius": "^2.0",
-        "meteo-concept/hcaptcha-bundle": ">=2"
+        "meteo-concept/hcaptcha-bundle": "^3|^4"
     },
     "require-dev": {
         "ext-json": "*",
