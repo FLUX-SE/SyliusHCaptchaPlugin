@@ -1,0 +1,12 @@
+sylius_ui:
+    events:
+        sylius.shop.contact.request.form:
+            blocks:
+                captcha:
+                    template: '@FluxSESyliusHCaptchaPlugin/form.html.twig'
+                    priority: -10
+        sylius.shop.register.form:
+            blocks:
+                captcha:
+                    template: '@FluxSESyliusHCaptchaPlugin/form.html.twig'
+                    priority: -10
