@@ -21,4 +21,9 @@ final class FluxSESyliusHCaptchaPlugin extends Bundle
             ->addCompilerPass(new SymfonyHttpClientCompilerPass())
         ;
     }
+
+    public function getPath(): string
+    {
+        return dirname(__DIR__);
+    }
 }

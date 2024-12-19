@@ -7,10 +7,9 @@ namespace FluxSE\SyliusHCaptchaPlugin\DependencyInjection;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;
-use Symfony\Component\DependencyInjection\Extension\PrependExtensionInterface;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 
-final class FluxSESyliusHCaptchaExtension extends Extension implements PrependExtensionInterface
+final class FluxSESyliusHCaptchaExtension extends Extension
 {
     public function load(array $configs, ContainerBuilder $container): void
     {
@@ -27,7 +26,7 @@ final class FluxSESyliusHCaptchaExtension extends Extension implements PrependEx
                     'form_themes' => [
                         '@FluxSESyliusHCaptchaPlugin/hcaptcha.html.twig',
                     ],
-                ]
+                ],
             );
         }
 
@@ -53,7 +52,7 @@ final class FluxSESyliusHCaptchaExtension extends Extension implements PrependEx
                             ],
                         ],
                     ],
-                ]
+                ],
             );
         }
     }
