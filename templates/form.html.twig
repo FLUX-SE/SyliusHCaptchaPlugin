@@ -1,3 +1,5 @@
-{% form_theme form '@FluxSESyliusHCaptchaPlugin/hcaptcha.html.twig' %}
+{% form_theme hookable_metadata.context.form '@FluxSESyliusHCaptchaPlugin/hcaptcha.html.twig' %}
 
-{{ form_row(form.captcha) }}
+<div class="mb-3">
+    {{ form_row(hookable_metadata.context.form.captcha) }}
+</div>
