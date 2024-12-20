@@ -10,6 +10,6 @@ return ECSConfig::configure()
     ])
     ->withPaths([
         'src',
-        'tests',
+        'tests/Behat',
     ])
 ;
