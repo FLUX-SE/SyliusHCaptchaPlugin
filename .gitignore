@@ -9,7 +9,7 @@
 
 /.phpunit.result.cache
 /phpunit.xml
-/phpstan.neon.dist
+/phpstan.neon
 /phpspec.yml
 /behat.yml
 /drivers/
