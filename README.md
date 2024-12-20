@@ -1,7 +1,6 @@
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE)
 [![Build Status][ico-github-actions]][link-github-actions]
-[![Quality Score][ico-code-quality]][link-code-quality]
 
 # Sylius Plugin adding hCaptcha integration
 
@@ -33,6 +32,15 @@ return [
 ];
 ```
 
+Import global configuration, by creating a new file `config/packages/fluxse_sylius_hcaptcha.yaml` :
+
+```yaml
+imports:
+  - { resource: "@FluxSESyliusHCaptchaPlugin/config/config.yaml" } 
+```
+
+### Meteo Concept hCaptcha Bundle configuration
+
 This plugin is using the `meteo-concept/hcaptcha-bundle` to handle the validation of the
 hCaptcha, so a little configuration have to be made.
 Add or modify the `meteo-concept/hcaptcha-bundle` configuration :
@@ -60,9 +68,7 @@ HCAPTCHA_SECRET=0x0000000000000000000000000000000000000000
 [ico-version]: http://poser.pugx.org/flux-se/sylius-hcaptcha-plugin/v
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
 [ico-github-actions]: https://github.com/FLUX-SE/SyliusHCaptchaPlugin/workflows/Build/badge.svg
-[ico-code-quality]: https://img.shields.io/scrutinizer/g/FLUX-SE/SyliusHCaptchaPlugin.svg?style=flat-square
 
 [link-packagist]: https://packagist.org/packages/flux-se/sylius-hcaptcha-plugin
 [link-github-actions]: https://github.com/FLUX-SE/SyliusHCaptchaPlugin/actions?query=workflow%3A"Build"
 [link-scrutinizer]: https://scrutinizer-ci.com/g/FLUX-SE/SyliusHCaptchaPlugin/code-structure
-[link-code-quality]: https://scrutinizer-ci.com/g/FLUX-SE/SyliusHCaptchaPlugin

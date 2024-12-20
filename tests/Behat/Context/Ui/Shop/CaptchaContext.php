@@ -13,9 +13,6 @@ final class CaptchaContext implements Context
     /** @var PageInterface */
     private $page;
 
-    /**
-     * @param PageInterface $page
-     */
     public function __construct(PageInterface $page)
     {
         $this->page = $page;

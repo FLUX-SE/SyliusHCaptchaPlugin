@@ -20,21 +20,21 @@ final class SymfonyHttpClientCompilerPass implements CompilerPassInterface
         if (false === $container->has(ClientInterface::class)) {
             $container->setDefinition(
                 ClientInterface::class,
-                new Definition(Psr18Client::class)
+                new Definition(Psr18Client::class),
             );
         }
 
         if (false === $container->has(RequestFactoryInterface::class)) {
             $container->setDefinition(
                 RequestFactoryInterface::class,
-                new Definition(Psr17Factory::class)
+                new Definition(Psr17Factory::class),
             );
         }
 
         if (false === $container->has(StreamFactoryInterface::class)) {
             $container->setDefinition(
                 StreamFactoryInterface::class,
-                new Definition(Psr17Factory::class)
+                new Definition(Psr17Factory::class),
             );
         }
     }

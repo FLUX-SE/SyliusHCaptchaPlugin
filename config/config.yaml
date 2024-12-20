@@ -1,0 +1,10 @@
+sylius_twig_hooks:
+    hooks:
+        sylius_shop.account.register.content.form:
+            h_captcha:
+                template: '@FluxSESyliusHCaptchaPlugin/form.html.twig'
+                priority: 10
+        sylius_shop.contact.contact_request.content.form:
+            h_captcha:
+                template: '@FluxSESyliusHCaptchaPlugin/form.html.twig'
+                priority: 10
