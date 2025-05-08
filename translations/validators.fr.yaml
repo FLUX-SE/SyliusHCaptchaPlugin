@@ -3,4 +3,4 @@ fluxse:
     form:
       captcha:
         is_valid_captcha: 'Le CAPTCHA est invalide.'
-        not_empty: 'Le CAPTCHA est requis.'
+        not_blank: 'Le CAPTCHA est requis.'
